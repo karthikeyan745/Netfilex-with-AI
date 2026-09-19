@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0F172A;
+  --bg-card: #1E293B;
+  --color-primary: #E50914;
+  --color-secondary: #6366F1;
+  --color-accent: #38BDF8;
+  --color-success: #22C55E;
+  --color-warning: #FACC15;
+  --color-danger: #EF4444;
+  --border-muted: rgba(255, 255, 255, 0.08);
+  --glow-red: rgba(229, 9, 20, 0.25);
+  --glow-blue: rgba(56, 189, 248, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Linear-style subtle background grid pattern */
+.bg-executive-grid {
+  background-color: #0F172A;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(229, 9, 20, 0.05) 0px, transparent 50%),
+    radial-gradient(at 90% 90%, rgba(99, 102, 241, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(56, 189, 248, 0.03) 0px, transparent 60%);
+}
+
+/* Executive Glassmorphism Card (16px corners, seamless blur) */
+.glass-card-executive {
+  background: rgba(30, 41, 59, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-executive:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.45), 0 0 20px -3px rgba(229, 9, 20, 0.2);
+  transform: translateY(-2px);
+}
+
+/* KPI Card Specific Styling */
+.kpi-card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi-card-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.kpi-card-glow:hover::before {
+  opacity: 1;
+}
+
+/* Recharts Custom Tooltip Styling */
+.recharts-default-tooltip {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(12px) !important;
+  color: #FFFFFF !important;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Tab Active Indicator */
+.tab-active {
+  background: rgba(229, 9, 20, 0.12);
+  color: #FFFFFF;
+  border-left: 3px solid #E50914;
+}
+
+/* Smooth badge pill */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}

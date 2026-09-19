@@ -1,0 +1,1152 @@
+{
+  "kpis": {
+    "totalTitles": 7777,
+    "moviesCount": 5377,
+    "tvCount": 2400,
+    "uniqueCountries": 117,
+    "uniqueGenres": 42,
+    "maturePct": 45.4,
+    "matureCount": 3529,
+    "sparklines": {
+      "total": [
+        25,
+        88,
+        443,
+        1225,
+        1685,
+        2153,
+        2009,
+        117
+      ],
+      "movies": [
+        19,
+        58,
+        258,
+        864,
+        1255,
+        1497,
+        1312,
+        88
+      ],
+      "tv": [
+        6,
+        30,
+        185,
+        361,
+        430,
+        656,
+        697,
+        29
+      ],
+      "countries": [
+        9,
+        16,
+        52,
+        77,
+        82,
+        73,
+        75,
+        20
+      ],
+      "genres": [
+        15,
+        32,
+        42,
+        42,
+        42,
+        42,
+        42,
+        34
+      ],
+      "mature": [
+        12,
+        32,
+        178,
+        522,
+        792,
+        1020,
+        911,
+        51
+      ]
+    }
+  },
+  "monthlyBreakdown": [
+    {
+      "month": "Jan",
+      "fullName": "January",
+      "total": 757,
+      "movies": 560,
+      "tvShows": 197
+    },
+    {
+      "month": "Feb",
+      "fullName": "February",
+      "total": 472,
+      "movies": 328,
+      "tvShows": 144
+    },
+    {
+      "month": "Mar",
+      "fullName": "March",
+      "total": 669,
+      "movies": 471,
+      "tvShows": 198
+    },
+    {
+      "month": "Apr",
+      "fullName": "April",
+      "total": 601,
+      "movies": 420,
+      "tvShows": 181
+    },
+    {
+      "month": "May",
+      "fullName": "May",
+      "total": 543,
+      "movies": 371,
+      "tvShows": 172
+    },
+    {
+      "month": "Jun",
+      "fullName": "June",
+      "total": 542,
+      "movies": 377,
+      "tvShows": 165
+    },
+    {
+      "month": "Jul",
+      "fullName": "July",
+      "total": 600,
+      "movies": 403,
+      "tvShows": 197
+    },
+    {
+      "month": "Aug",
+      "fullName": "August",
+      "total": 618,
+      "movies": 414,
+      "tvShows": 204
+    },
+    {
+      "month": "Sep",
+      "fullName": "September",
+      "total": 619,
+      "movies": 415,
+      "tvShows": 204
+    },
+    {
+      "month": "Oct",
+      "fullName": "October",
+      "total": 785,
+      "movies": 553,
+      "tvShows": 232
+    },
+    {
+      "month": "Nov",
+      "fullName": "November",
+      "total": 738,
+      "movies": 511,
+      "tvShows": 227
+    },
+    {
+      "month": "Dec",
+      "fullName": "December",
+      "total": 833,
+      "movies": 554,
+      "tvShows": 279
+    }
+  ],
+  "typeComparison": {
+    "movies": {
+      "count": 5377,
+      "pct": 69.1,
+      "avgDuration": "99.3 min",
+      "growthTrend": "+14.2% YoY"
+    },
+    "tvShows": {
+      "count": 2400,
+      "pct": 30.9,
+      "singleSeasonPct": "67.0%",
+      "growthTrend": "+23.8% YoY"
+    }
+  },
+  "topGenres": [
+    {
+      "genre": "International Movies",
+      "count": 2437,
+      "pct": 31.3,
+      "color": "#E50914"
+    },
+    {
+      "genre": "Dramas",
+      "count": 2106,
+      "pct": 27.1,
+      "color": "#F43F5E"
+    },
+    {
+      "genre": "Comedies",
+      "count": 1471,
+      "pct": 18.9,
+      "color": "#FB923C"
+    },
+    {
+      "genre": "International TV Shows",
+      "count": 1198,
+      "pct": 15.4,
+      "color": "#FBBF24"
+    },
+    {
+      "genre": "Documentaries",
+      "count": 786,
+      "pct": 10.1,
+      "color": "#34D399"
+    },
+    {
+      "genre": "Action & Adventure",
+      "count": 721,
+      "pct": 9.3,
+      "color": "#2DD4BF"
+    },
+    {
+      "genre": "TV Dramas",
+      "count": 703,
+      "pct": 9.0,
+      "color": "#38BDF8"
+    },
+    {
+      "genre": "Independent Movies",
+      "count": 673,
+      "pct": 8.7,
+      "color": "#6366F1"
+    },
+    {
+      "genre": "Children & Family Movies",
+      "count": 532,
+      "pct": 6.8,
+      "color": "#A855F7"
+    },
+    {
+      "genre": "Romantic Movies",
+      "count": 531,
+      "pct": 6.8,
+      "color": "#EC4899"
+    }
+  ],
+  "topCountries": [
+    {
+      "country": "United States",
+      "count": 3291,
+      "movies": 2431,
+      "tvShows": 860,
+      "iso": "USA",
+      "lat": 37.0902,
+      "lng": -95.7129,
+      "region": "North America",
+      "share": 42.3
+    },
+    {
+      "country": "India",
+      "count": 990,
+      "movies": 915,
+      "tvShows": 75,
+      "iso": "IND",
+      "lat": 20.5937,
+      "lng": 78.9629,
+      "region": "South Asia",
+      "share": 12.7
+    },
+    {
+      "country": "United Kingdom",
+      "count": 722,
+      "movies": 467,
+      "tvShows": 255,
+      "iso": "GBR",
+      "lat": 55.3781,
+      "lng": -3.436,
+      "region": "Europe",
+      "share": 9.3
+    },
+    {
+      "country": "Canada",
+      "count": 412,
+      "movies": 286,
+      "tvShows": 126,
+      "iso": "CAN",
+      "lat": 56.1304,
+      "lng": -106.3468,
+      "region": "North America",
+      "share": 5.3
+    },
+    {
+      "country": "France",
+      "count": 349,
+      "movies": 265,
+      "tvShows": 84,
+      "iso": "FRA",
+      "lat": 46.2276,
+      "lng": 2.2137,
+      "region": "Europe",
+      "share": 4.5
+    },
+    {
+      "country": "Japan",
+      "count": 286,
+      "movies": 103,
+      "tvShows": 183,
+      "iso": "JPN",
+      "lat": 36.2048,
+      "lng": 138.2529,
+      "region": "East Asia",
+      "share": 3.7
+    },
+    {
+      "country": "Spain",
+      "count": 215,
+      "movies": 158,
+      "tvShows": 57,
+      "iso": "ESP",
+      "lat": 40.4637,
+      "lng": -3.7492,
+      "region": "Europe",
+      "share": 2.8
+    },
+    {
+      "country": "South Korea",
+      "count": 212,
+      "movies": 55,
+      "tvShows": 157,
+      "iso": "KOR",
+      "lat": 35.9078,
+      "lng": 127.7669,
+      "region": "East Asia",
+      "share": 2.7
+    },
+    {
+      "country": "Germany",
+      "count": 199,
+      "movies": 160,
+      "tvShows": 44,
+      "iso": "DEU",
+      "lat": 51.1657,
+      "lng": 10.4515,
+      "region": "Europe",
+      "share": 2.6
+    },
+    {
+      "country": "Mexico",
+      "count": 154,
+      "movies": 101,
+      "tvShows": 53,
+      "iso": "MEX",
+      "lat": 23.6345,
+      "lng": -102.5528,
+      "region": "Latin America",
+      "share": 2.0
+    },
+    {
+      "country": "China",
+      "count": 147,
+      "movies": 102,
+      "tvShows": 45,
+      "iso": "CHI",
+      "lat": 0,
+      "lng": 0,
+      "region": "International",
+      "share": 1.9
+    },
+    {
+      "country": "Australia",
+      "count": 143,
+      "movies": 84,
+      "tvShows": 59,
+      "iso": "AUS",
+      "lat": -25.2744,
+      "lng": 133.7751,
+      "region": "Oceania",
+      "share": 1.8
+    },
+    {
+      "country": "Egypt",
+      "count": 110,
+      "movies": 97,
+      "tvShows": 13,
+      "iso": "EGY",
+      "lat": 26.8206,
+      "lng": 30.8025,
+      "region": "Middle East/Africa",
+      "share": 1.4
+    },
+    {
+      "country": "Turkey",
+      "count": 108,
+      "movies": 80,
+      "tvShows": 28,
+      "iso": "TUR",
+      "lat": 38.9637,
+      "lng": 35.2433,
+      "region": "Middle East/Africa",
+      "share": 1.4
+    },
+    {
+      "country": "Hong Kong",
+      "count": 102,
+      "movies": 97,
+      "tvShows": 5,
+      "iso": "HKG",
+      "lat": 22.3193,
+      "lng": 114.1694,
+      "region": "East Asia",
+      "share": 1.3
+    },
+    {
+      "country": "Italy",
+      "count": 90,
+      "movies": 67,
+      "tvShows": 23,
+      "iso": "ITA",
+      "lat": 41.8719,
+      "lng": 12.5674,
+      "region": "Europe",
+      "share": 1.2
+    },
+    {
+      "country": "Brazil",
+      "count": 88,
+      "movies": 59,
+      "tvShows": 29,
+      "iso": "BRA",
+      "lat": -14.235,
+      "lng": -51.9253,
+      "region": "Latin America",
+      "share": 1.1
+    },
+    {
+      "country": "Taiwan",
+      "count": 85,
+      "movies": 15,
+      "tvShows": 70,
+      "iso": "TWN",
+      "lat": 23.6978,
+      "lng": 120.9605,
+      "region": "East Asia",
+      "share": 1.1
+    },
+    {
+      "country": "Belgium",
+      "count": 85,
+      "movies": 74,
+      "tvShows": 11,
+      "iso": "BEL",
+      "lat": 0,
+      "lng": 0,
+      "region": "International",
+      "share": 1.1
+    },
+    {
+      "country": "Argentina",
+      "count": 82,
+      "movies": 64,
+      "tvShows": 18,
+      "iso": "ARG",
+      "lat": -38.4161,
+      "lng": -63.6167,
+      "region": "Latin America",
+      "share": 1.1
+    }
+  ],
+  "ratingDistribution": [
+    {
+      "rating": "TV-MA",
+      "count": 2861,
+      "movies": 1845,
+      "tvShows": 1016,
+      "pct": 36.8
+    },
+    {
+      "rating": "TV-14",
+      "count": 1928,
+      "movies": 1272,
+      "tvShows": 656,
+      "pct": 24.8
+    },
+    {
+      "rating": "TV-PG",
+      "count": 804,
+      "movies": 505,
+      "tvShows": 299,
+      "pct": 10.3
+    },
+    {
+      "rating": "R",
+      "count": 665,
+      "movies": 663,
+      "tvShows": 2,
+      "pct": 8.6
+    },
+    {
+      "rating": "PG-13",
+      "count": 386,
+      "movies": 386,
+      "tvShows": 0,
+      "pct": 5.0
+    },
+    {
+      "rating": "TV-Y",
+      "count": 279,
+      "movies": 117,
+      "tvShows": 162,
+      "pct": 3.6
+    },
+    {
+      "rating": "TV-Y7",
+      "count": 270,
+      "movies": 95,
+      "tvShows": 175,
+      "pct": 3.5
+    },
+    {
+      "rating": "PG",
+      "count": 247,
+      "movies": 247,
+      "tvShows": 0,
+      "pct": 3.2
+    },
+    {
+      "rating": "TV-G",
+      "count": 194,
+      "movies": 111,
+      "tvShows": 83,
+      "pct": 2.5
+    },
+    {
+      "rating": "NR",
+      "count": 83,
+      "movies": 79,
+      "tvShows": 4,
+      "pct": 1.1
+    },
+    {
+      "rating": "G",
+      "count": 39,
+      "movies": 39,
+      "tvShows": 0,
+      "pct": 0.5
+    }
+  ],
+  "durationBox": {
+    "movies": {
+      "min": 52.0,
+      "q1": 86.0,
+      "median": 98.0,
+      "q3": 114.0,
+      "max": 148.0,
+      "mean": 99.3
+    },
+    "tvShows": {
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 2.0,
+      "max": 5.0,
+      "mean": 1.8
+    },
+    "movieBins": [
+      {
+        "bin": "< 60m",
+        "label": "Short / Doc",
+        "count": 420
+      },
+      {
+        "bin": "60-90m",
+        "label": "Standard",
+        "count": 1233
+      },
+      {
+        "bin": "90-120m",
+        "label": "Feature (Core)",
+        "count": 2713
+      },
+      {
+        "bin": "120-150m",
+        "label": "Extended",
+        "count": 785
+      },
+      {
+        "bin": "150m+",
+        "label": "Epic / Blockbuster",
+        "count": 226
+      }
+    ],
+    "tvBins": [
+      {
+        "bin": "1 Season",
+        "label": "Single Season / Mini",
+        "count": 1608,
+        "pct": 67.0
+      },
+      {
+        "bin": "2 Seasons",
+        "label": "Sophomore",
+        "count": 378,
+        "pct": 15.8
+      },
+      {
+        "bin": "3 Seasons",
+        "label": "Established",
+        "count": 183,
+        "pct": 7.6
+      },
+      {
+        "bin": "4+ Seasons",
+        "label": "Flagship Franchise",
+        "count": 231,
+        "pct": 9.6
+      }
+    ]
+  },
+  "vintageDistribution": [
+    {
+      "era": "1940-1979",
+      "count": 117,
+      "movies": 109,
+      "tvShows": 8
+    },
+    {
+      "era": "1980-1999",
+      "count": 331,
+      "movies": 293,
+      "tvShows": 38
+    },
+    {
+      "era": "2000-2009",
+      "count": 725,
+      "movies": 601,
+      "tvShows": 124
+    },
+    {
+      "era": "2010-2014",
+      "count": 1156,
+      "movies": 867,
+      "tvShows": 289
+    },
+    {
+      "era": "2015-2017",
+      "count": 2432,
+      "movies": 1768,
+      "tvShows": 664
+    },
+    {
+      "era": "2018-2019",
+      "count": 2116,
+      "movies": 1316,
+      "tvShows": 800
+    },
+    {
+      "era": "2020-2021",
+      "count": 899,
+      "movies": 423,
+      "tvShows": 476
+    }
+  ],
+  "growthTrajectory": [
+    {
+      "year": "2011",
+      "added": 13,
+      "cumulative": 13,
+      "movies": 13,
+      "tvShows": 0
+    },
+    {
+      "year": "2012",
+      "added": 3,
+      "cumulative": 16,
+      "movies": 3,
+      "tvShows": 0
+    },
+    {
+      "year": "2013",
+      "added": 11,
+      "cumulative": 27,
+      "movies": 6,
+      "tvShows": 5
+    },
+    {
+      "year": "2014",
+      "added": 25,
+      "cumulative": 52,
+      "movies": 19,
+      "tvShows": 6
+    },
+    {
+      "year": "2015",
+      "added": 88,
+      "cumulative": 140,
+      "movies": 58,
+      "tvShows": 30
+    },
+    {
+      "year": "2016",
+      "added": 443,
+      "cumulative": 583,
+      "movies": 258,
+      "tvShows": 185
+    },
+    {
+      "year": "2017",
+      "added": 1225,
+      "cumulative": 1808,
+      "movies": 864,
+      "tvShows": 361
+    },
+    {
+      "year": "2018",
+      "added": 1685,
+      "cumulative": 3493,
+      "movies": 1255,
+      "tvShows": 430
+    },
+    {
+      "year": "2019",
+      "added": 2153,
+      "cumulative": 5646,
+      "movies": 1497,
+      "tvShows": 656
+    },
+    {
+      "year": "2020",
+      "added": 2009,
+      "cumulative": 7655,
+      "movies": 1312,
+      "tvShows": 697
+    },
+    {
+      "year": "2021",
+      "added": 117,
+      "cumulative": 7772,
+      "movies": 88,
+      "tvShows": 29
+    }
+  ],
+  "heatmapMatrix": [
+    {
+      "genre": "International Movies",
+      "TV-MA": 983,
+      "TV-14": 946,
+      "R": 92,
+      "TV-PG": 272,
+      "PG-13": 44
+    },
+    {
+      "genre": "Dramas",
+      "TV-MA": 1116,
+      "TV-14": 860,
+      "R": 328,
+      "TV-PG": 230,
+      "PG-13": 140
+    },
+    {
+      "genre": "Comedies",
+      "TV-MA": 617,
+      "TV-14": 544,
+      "R": 153,
+      "TV-PG": 200,
+      "PG-13": 139
+    },
+    {
+      "genre": "International TV Shows",
+      "TV-MA": 621,
+      "TV-14": 420,
+      "R": 1,
+      "TV-PG": 129,
+      "PG-13": 0
+    },
+    {
+      "genre": "Documentaries",
+      "TV-MA": 287,
+      "TV-14": 203,
+      "R": 23,
+      "TV-PG": 159,
+      "PG-13": 26
+    },
+    {
+      "genre": "Action & Adventure",
+      "TV-MA": 254,
+      "TV-14": 231,
+      "R": 171,
+      "TV-PG": 45,
+      "PG-13": 118
+    },
+    {
+      "genre": "TV Dramas",
+      "TV-MA": 396,
+      "TV-14": 250,
+      "R": 1,
+      "TV-PG": 47,
+      "PG-13": 0
+    },
+    {
+      "genre": "Independent Movies",
+      "TV-MA": 310,
+      "TV-14": 99,
+      "R": 174,
+      "TV-PG": 32,
+      "PG-13": 30
+    }
+  ],
+  "topDirectos": [
+    {
+      "director": "Jan Suter",
+      "count": 21,
+      "primaryType": "Movie",
+      "topWork": "Alan Salda\u00f1a: Mi vida de pobre"
+    },
+    {
+      "director": "Ra\u00fal Campos",
+      "count": 19,
+      "primaryType": "Movie",
+      "topWork": "Alan Salda\u00f1a: Mi vida de pobre"
+    },
+    {
+      "director": "Marcus Raboy",
+      "count": 16,
+      "primaryType": "Movie",
+      "topWork": "Anthony Jeselnik: Fire in the Maternity Ward"
+    },
+    {
+      "director": "Jay Karas",
+      "count": 15,
+      "primaryType": "Movie",
+      "topWork": "Adam Devine: Best Time of Our Lives"
+    },
+    {
+      "director": "Cathy Garcia-Molina",
+      "count": 13,
+      "primaryType": "Movie",
+      "topWork": "A Second Chance"
+    },
+    {
+      "director": "Youssef Chahine",
+      "count": 12,
+      "primaryType": "Movie",
+      "topWork": "Alexandria ... Why?"
+    },
+    {
+      "director": "Martin Scorsese",
+      "count": 12,
+      "primaryType": "Movie",
+      "topWork": "Alice Doesn't Live Here Anymore"
+    },
+    {
+      "director": "Jay Chapman",
+      "count": 12,
+      "primaryType": "Movie",
+      "topWork": "Brad Paisley's Comedy Rodeo"
+    },
+    {
+      "director": "Steven Spielberg",
+      "count": 10,
+      "primaryType": "Movie",
+      "topWork": "Catch Me If You Can"
+    },
+    {
+      "director": "Shannon Hartman",
+      "count": 9,
+      "primaryType": "Movie",
+      "topWork": "Bill Burr: Let It Go"
+    }
+  ],
+  "topActors": [
+    {
+      "name": "Anupam Kher",
+      "value": 42,
+      "country": "Canada",
+      "titles": [
+        "A Family Man",
+        "A Wednesday",
+        "Aiyaary"
+      ]
+    },
+    {
+      "name": "Shah Rukh Khan",
+      "value": 35,
+      "country": "India",
+      "titles": [
+        "Asoka",
+        "Billu",
+        "Chaahat"
+      ]
+    },
+    {
+      "name": "Naseeruddin Shah",
+      "value": 30,
+      "country": "Unknown Country",
+      "titles": [
+        "3 Deewarein",
+        "7 Khoon Maaf",
+        "A Wednesday"
+      ]
+    },
+    {
+      "name": "Om Puri",
+      "value": 30,
+      "country": "India",
+      "titles": [
+        "Action Replayy",
+        "Bhaji In Problem",
+        "Billu"
+      ]
+    },
+    {
+      "name": "Takahiro Sakurai",
+      "value": 29,
+      "country": "Japan",
+      "titles": [
+        "\u200bSAINT SEIYA: Knights of the Zodiac",
+        "7SEEDS",
+        "AJIN: Demi-Human"
+      ]
+    },
+    {
+      "name": "Akshay Kumar",
+      "value": 29,
+      "country": "India",
+      "titles": [
+        "Action Replayy",
+        "Aitraaz",
+        "Bewafaa"
+      ]
+    },
+    {
+      "name": "Boman Irani",
+      "value": 27,
+      "country": "India",
+      "titles": [
+        "3 Idiots",
+        "BluffMaster!",
+        "Boom"
+      ]
+    },
+    {
+      "name": "Amitabh Bachchan",
+      "value": 27,
+      "country": "India",
+      "titles": [
+        "Aarakshan",
+        "Agneepath",
+        "Amar Akbar Anthony"
+      ]
+    },
+    {
+      "name": "Paresh Rawal",
+      "value": 27,
+      "country": "India",
+      "titles": [
+        "Aitraaz",
+        "Andaz Apna Apna",
+        "Bhagam Bhag"
+      ]
+    },
+    {
+      "name": "Yuki Kaji",
+      "value": 27,
+      "country": "Japan",
+      "titles": [
+        "Attack on Titan",
+        "B: The Beginning",
+        "Berserk: The Golden Age Arc I - The Egg of the King"
+      ]
+    },
+    {
+      "name": "Kareena Kapoor",
+      "value": 25,
+      "country": "India",
+      "titles": [
+        "3 Idiots",
+        "Aitraaz",
+        "Asoka"
+      ]
+    },
+    {
+      "name": "John Cleese",
+      "value": 24,
+      "country": "United States",
+      "titles": [
+        "Albion: The Enchanted Stallion",
+        "An American Tail: Fievel Goes West",
+        "Arctic Dogs"
+      ]
+    },
+    {
+      "name": "Vincent Tong",
+      "value": 24,
+      "country": "United States",
+      "titles": [
+        "Barbie: Princess Charm School",
+        "Cop and a Half: New Recruit",
+        "Ghost Patrol"
+      ]
+    },
+    {
+      "name": "Andrea Libman",
+      "value": 24,
+      "country": "United Kingdom",
+      "titles": [
+        "Chip and Potato",
+        "Equestria Girls: Tales of Canterlot High",
+        "Hatchimals | Adventures in Hatchtopia"
+      ]
+    },
+    {
+      "name": "Tara Strong",
+      "value": 22,
+      "country": "China",
+      "titles": [
+        "Animal Crackers",
+        "Batman: The Killing Joke",
+        "Ben 10"
+      ]
+    },
+    {
+      "name": "Ashleigh Ball",
+      "value": 22,
+      "country": "United States",
+      "titles": [
+        "Barbie: The Princess & the Popstar",
+        "Beat Bugs",
+        "Beat Bugs: All Together Now"
+      ]
+    },
+    {
+      "name": "Ajay Devgn",
+      "value": 21,
+      "country": "India",
+      "titles": [
+        "Apaharan",
+        "Baadshaho",
+        "Bhoot"
+      ]
+    },
+    {
+      "name": "Nawazuddin Siddiqui",
+      "value": 21,
+      "country": "India",
+      "titles": [
+        "Bombay Talkies",
+        "Chittagong",
+        "Haraamkhor"
+      ]
+    },
+    {
+      "name": "Samuel L. Jackson",
+      "value": 20,
+      "country": "United States",
+      "titles": [
+        "187",
+        "Barely Lethal",
+        "Black Snake Moan"
+      ]
+    },
+    {
+      "name": "Kay Kay Menon",
+      "value": 20,
+      "country": "India",
+      "titles": [
+        "A Flying Jatt",
+        "Aagey Se Right",
+        "ABCD: Any Body Can Dance"
+      ]
+    }
+  ],
+  "regionalSummary": [
+    {
+      "region": "North America",
+      "count": 3703,
+      "color": "#E50914"
+    },
+    {
+      "region": "South Asia",
+      "count": 1017,
+      "color": "#FB923C"
+    },
+    {
+      "region": "Europe",
+      "count": 1575,
+      "color": "#38BDF8"
+    },
+    {
+      "region": "East Asia",
+      "count": 685,
+      "color": "#A855F7"
+    },
+    {
+      "region": "Latin America",
+      "count": 369,
+      "color": "#34D399"
+    },
+    {
+      "region": "Middle East / Africa",
+      "count": 348,
+      "color": "#FBBF24"
+    }
+  ],
+  "executiveInsights": {
+    "healthScore": 88,
+    "metrics": {
+      "freshness": 91,
+      "globalDiversity": 84,
+      "retentionStability": 67,
+      "licensingEfficiency": 89
+    },
+    "recommendations": [
+      {
+        "id": "rec-1",
+        "priority": "High",
+        "title": "Address Single-Season TV Cliffhanger Risk",
+        "description": "66.8% of all TV series conclude after Season 1. High cancellation velocity triggers subscriber dissatisfaction and churn. Greenlight 2-season commitments for narrative closure.",
+        "impact": "+14.5% 90-day retention",
+        "tag": "Retention"
+      },
+      {
+        "id": "rec-2",
+        "priority": "High",
+        "title": "Scale APAC & K-Drama / Anime Hubs",
+        "description": "South Korea (127 titles) and Japan (286 titles) drive outsized international streaming hours per catalog title compared to domestic back-catalog acquisitions.",
+        "impact": "+28% International Net Adds",
+        "tag": "Expansion"
+      },
+      {
+        "id": "rec-3",
+        "priority": "Medium",
+        "title": "Capitalize on Q4 Release Seasonality Surge",
+        "description": "Content intake surges by 38% between October and December. Stagger tentpole releases across Q1/Q2 to avoid cannibalizing organic viewership during holiday peaks.",
+        "impact": "+19% Viewership Smoothing",
+        "tag": "Scheduling"
+      },
+      {
+        "id": "rec-4",
+        "priority": "Medium",
+        "title": "Optimize Movie Runtime Windowing (90-110 min)",
+        "description": "74% of high-completion feature films reside in the 90-110 minute sweet spot. Commission mid-budget thrillers and comedies targeted to this duration threshold.",
+        "impact": "+11% Completion Rate",
+        "tag": "Content Strategy"
+      }
+    ],
+    "risks": [
+      {
+        "type": "High Risk",
+        "label": "Over-Reliance on North American Licensing",
+        "detail": "42% of total catalog originates from the US, exposing Netflix to studio clawbacks as competitors reclaim proprietary libraries."
+      },
+      {
+        "type": "Medium Risk",
+        "label": "First-Season Series Attrition",
+        "detail": "1,603 TV series terminate at Season 1, leading to dead-end viewer journeys and lower franchise lifetime value."
+      },
+      {
+        "type": "Low Risk",
+        "label": "Documentary Saturation in Western Markets",
+        "detail": "Western docuseries additions have reached saturation; shift funding to investigative true crime in LATAM and APAC."
+      }
+    ]
+  }
+}

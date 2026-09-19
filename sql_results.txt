@@ -1,0 +1,221 @@
+=== Top 10 Genres ===
+Query:
+SELECT value as genre, COUNT(*) as title_count
+        FROM netflix_titles, json_each('["' || replace(listed_in, ', ', '","') || '"]')
+        GROUP BY genre
+        ORDER BY title_count DESC
+        LIMIT 10;
+
+Results:
+                   genre  title_count
+    International Movies         2437
+                  Dramas         2106
+                Comedies         1471
+  International TV Shows         1198
+           Documentaries          786
+      Action & Adventure          721
+               TV Dramas          703
+      Independent Movies          673
+Children & Family Movies          532
+         Romantic Movies          531
+
+==================================================
+
+=== Top Countries ===
+Query:
+SELECT value as country_name, COUNT(*) as title_count
+        FROM netflix_titles, json_each('["' || replace(country, ', ', '","') || '"]')
+        WHERE country_name != 'Unknown Country'
+        GROUP BY country_name
+        ORDER BY title_count DESC
+        LIMIT 10;
+
+Results:
+  country_name  title_count
+ United States         3290
+         India          990
+United Kingdom          721
+        Canada          412
+        France          349
+         Japan          286
+         Spain          215
+   South Korea          212
+       Germany          199
+        Mexico          154
+
+==================================================
+
+=== Most Active Years Added ===
+Query:
+SELECT year_added, COUNT(*) as title_count
+        FROM netflix_titles
+        GROUP BY year_added
+        ORDER BY title_count DESC
+        LIMIT 10;
+
+Results:
+ year_added  title_count
+       2019         2153
+       2020         2009
+       2018         1685
+       2017         1225
+       2016          443
+       2021          117
+       2015           88
+       2014           25
+       2011           13
+       2013           11
+
+==================================================
+
+=== Director Rankings ===
+Query:
+SELECT value as director_name, COUNT(*) as title_count
+        FROM netflix_titles, json_each('["' || replace(director, ', ', '","') || '"]')
+        WHERE director_name != 'Unknown Director'
+        GROUP BY director_name
+        ORDER BY title_count DESC
+        LIMIT 10;
+
+Results:
+Error executing query: Execution failed on sql '
+        SELECT value as director_name, COUNT(*) as title_count
+        FROM netflix_titles, json_each('["' || replace(director, ', ', '","') || '"]')
+        WHERE director_name != 'Unknown Director'
+        GROUP BY director_name
+        ORDER BY title_count DESC
+        LIMIT 10;
+    ': malformed JSON
+
+=== Rating Distribution ===
+Query:
+SELECT rating, COUNT(*) as title_count, 
+               ROUND((COUNT(*) * 100.0 / (SELECT COUNT(*) FROM netflix_titles)), 2) as percentage
+        FROM netflix_titles
+        GROUP BY rating
+        ORDER BY title_count DESC;
+
+Results:
+  rating  title_count  percentage
+   TV-MA         2861       36.79
+   TV-14         1928       24.79
+   TV-PG          804       10.34
+       R          665        8.55
+   PG-13          386        4.96
+    TV-Y          279        3.59
+   TV-Y7          270        3.47
+      PG          247        3.18
+    TV-G          194        2.49
+      NR           83        1.07
+       G           39        0.50
+      UR           12        0.15
+TV-Y7-FV            6        0.08
+   NC-17            3        0.04
+
+==================================================
+
+=== Average Movie Duration ===
+Query:
+SELECT AVG(duration_num) as avg_duration_minutes,
+               MIN(duration_num) as min_duration,
+               MAX(duration_num) as max_duration
+        FROM netflix_titles
+        WHERE type = 'Movie';
+
+Results:
+ avg_duration_minutes  min_duration  max_duration
+            99.307978           3.0         312.0
+
+==================================================
+
+=== Movies Released After 2020 ===
+Query:
+SELECT title, director, country, release_year
+        FROM netflix_titles
+        WHERE type = 'Movie' AND release_year > 2020
+        LIMIT 5;
+
+Results:
+                                                title         director                               country  release_year
+                                             Charming     Ross Venokur Canada, United States, Cayman Islands          2021
+Chris Rock Total Blackout: The Tamborine Extended Cut       Chris Rock                       Unknown Country          2021
+              Crack: Cocaine, Corruption & Conspiracy   Stanley Nelson                         United States          2021
+                          Creating The Queen's Gambit Unknown Director                       Unknown Country          2021
+                                     Outside the Wire  Mikael Håfström                       Unknown Country          2021
+
+==================================================
+
+=== TV Shows with Multiple Seasons ===
+Query:
+SELECT title, duration as seasons_count
+        FROM netflix_titles
+        WHERE type = 'TV Show' AND duration_num > 1
+        ORDER BY duration_num DESC
+        LIMIT 10;
+
+Results:
+                           title seasons_count
+                  Grey's Anatomy    16 Seasons
+                            NCIS    15 Seasons
+                    Supernatural    15 Seasons
+          COMEDIANS of the world    13 Seasons
+                  Criminal Minds    12 Seasons
+               Trailer Park Boys    12 Seasons
+                          Cheers    11 Seasons
+                       Heartland    11 Seasons
+                      Dad's Army    10 Seasons
+Danger Mouse: Classic Collection    10 Seasons
+
+==================================================
+
+=== Top Actors (Cast Members) ===
+Query:
+SELECT value as actor_name, COUNT(*) as title_count
+        FROM netflix_titles, json_each('["' || replace(cast, ', ', '","') || '"]')
+        WHERE actor_name != 'Unknown Cast'
+        GROUP BY actor_name
+        ORDER BY title_count DESC
+        LIMIT 10;
+
+Results:
+Error executing query: Execution failed on sql '
+        SELECT value as actor_name, COUNT(*) as title_count
+        FROM netflix_titles, json_each('["' || replace(cast, ', ', '","') || '"]')
+        WHERE actor_name != 'Unknown Cast'
+        GROUP BY actor_name
+        ORDER BY title_count DESC
+        LIMIT 10;
+    ': near ",": syntax error
+
+=== Year-over-Year Growth Table ===
+Query:
+WITH yearly_counts AS (
+            SELECT year_added, COUNT(*) as current_count
+            FROM netflix_titles
+            WHERE year_added BETWEEN 2008 AND 2021
+            GROUP BY year_added
+        )
+        SELECT year_added, current_count,
+               LAG(current_count) OVER (ORDER BY year_added) as previous_count,
+               ROUND(((current_count - LAG(current_count) OVER (ORDER BY year_added)) * 100.0 / LAG(current_count) OVER (ORDER BY year_added)), 2) as yoy_growth_pct
+        FROM yearly_counts;
+
+Results:
+ year_added  current_count  previous_count  yoy_growth_pct
+       2008              2             NaN             NaN
+       2009              2             2.0            0.00
+       2010              1             2.0          -50.00
+       2011             13             1.0         1200.00
+       2012              3            13.0          -76.92
+       2013             11             3.0          266.67
+       2014             25            11.0          127.27
+       2015             88            25.0          252.00
+       2016            443            88.0          403.41
+       2017           1225           443.0          176.52
+       2018           1685          1225.0           37.55
+       2019           2153          1685.0           27.77
+       2020           2009          2153.0           -6.69
+       2021            117          2009.0          -94.18
+
+==================================================
+
